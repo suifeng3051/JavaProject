@@ -1,4 +1,4 @@
-package com.java.my.util;
+package utils;
 
 
 

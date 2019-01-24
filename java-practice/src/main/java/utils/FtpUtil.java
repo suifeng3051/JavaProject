@@ -1,14 +1,10 @@
-package com.java.my.util;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+package utils;
 
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPClientConfig;
 import org.apache.commons.net.ftp.FTPConnectionClosedException;
+
+import java.io.*;
 
 public class FtpUtil {
 	private FTPClient ftpClient = null;

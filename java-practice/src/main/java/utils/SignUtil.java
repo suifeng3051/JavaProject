@@ -6,7 +6,6 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -88,22 +87,7 @@ public class SignUtil {
 
     public static void main(String[] args) throws Exception {
 
-        //String clientSecret="054e7ead8a8340c79eaa7ba98854f25b";//测试
-        //预发
-        String clientSecret="9a5ace98d84346498d4b09b0db9477f9";
-        String clientId="2";
-        String timestamp="20171226195300";
-        String userName="16538";
-        String password="wanghouda@123";
-        String type="1";
 
-        Map<String,String> paramMap=new HashMap<>();
-        paramMap.put("username",userName);
-        paramMap.put("password",password);
-        paramMap.put("type",type);
-        paramMap.put("client_id",clientId);
-        paramMap.put("gw_timestamp",timestamp);
-        String sign=generateSign(paramMap,clientSecret);
 
     }
 
